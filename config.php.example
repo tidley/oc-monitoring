@@ -1,0 +1,14 @@
+<?php
+// Copy to config.php
+
+return [
+  // Required: shared secret used by the bridge when POSTing to ingest.php
+  'ingest_secret' => 'CHANGE_ME',
+
+  // Storage
+  'data_dir' => __DIR__ . '/data',
+  'updates_file' => __DIR__ . '/data/updates.jsonl',
+
+  // Retention
+  'max_updates' => 5000,
+];
